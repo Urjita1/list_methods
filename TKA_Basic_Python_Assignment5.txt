@@ -1,0 +1,73 @@
+cars=["BMW","Mahindra", "Suzuki", "Rolls Royce", "Bentley", "Aston Martin", "Tata", "Audi", "Mustang"]
+# 1. Append "ferrari" to the list
+cars.append("Ferrari")
+print(cars)                #['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Audi', 'Mustang', 'Ferrari']
+
+# 2. Insert "porsche" at index 3
+cars.insert(3,"porsche")
+print(cars)             #['BMW', 'Mahindra', 'Suzuki', 'porsche', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Audi', 'Mustang', 'Ferrari']
+
+# 3. Clear all elements from the list
+cars.clear()
+print(cars)          #[]
+
+#Redefine the list
+cars= ['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Audi', 'Mustang']
+
+# 4. Sort the original list in alphabetical order.
+sorted_cars=sorted(cars)
+print(sorted_cars)             #['Aston Martin', 'Audi', 'BMW', 'Bentley', 'Mahindra', 'Mustang', 'Rolls Royce', 'Suzuki', 'Tata']
+
+# 5. Remove "Audi" from the list
+cars.remove("Audi")
+print(cars)            #['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Mustang']
+
+# 6. Index Find the Index of "Mustang"
+print(cars.index("Mustang"))      #7
+
+# 7. Extend the list with another list cars: ["Tesla", "Nissan"]
+cars.extend(["Tesla", "Nissan"])
+print(cars)                  #['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Mustang', 'Tesla', 'Nissan']
+
+# 8. Pop the last element from the list and print it
+cars.pop()
+print(cars)                  #['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Mustang', 'Tesla']
+
+# 9. Count how many times "BMW" appears in the list
+print(cars.count("BMw"))      #0
+
+# 10. Append Multiple cars: ["jaguar", "Fiat"]
+cars.extend(["jaguar", "Fiat"])
+print(cars)                  #['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Mustang', 'Tesla', 'jaguar', 'Fiat']
+
+# 11. Insert Multiple cars:["Volvo","Honda"] at the index 2
+cars[2]=["Volvo","Honda"]
+print(cars)              #['BMW', 'Mahindra', ['Volvo', 'Honda'], 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Mustang', 'Tesla', 'jaguar', 'Fiat'] 
+
+# 12. Clear if the list is empty if it is clear it
+if not cars:
+ cars.clear()
+print(cars)             #['BMW', 'Mahindra', ['Volvo', 'Honda'], 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Mustang', 'Tesla', 'jaguar', 'Fiat']
+
+#Original List
+cars= ['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Audi', 'Mustang']
+
+
+# 13. Sort Descending order the original list of cars
+cars.sort(reverse=True)
+print(cars)              #['Tata', 'Suzuki', 'Rolls Royce', 'Mustang', 'Mahindra', 'Bentley', 'BMW', 'Audi', 'Aston Martin']
+
+# 14. Remove the all Occurrences of the "BMW" from the list
+cars.remove("BMW")
+print(cars)                    #['Tata', 'Suzuki', 'Rolls Royce', 'Mustang', 'Mahindra', 'Bentley', 'Audi', 'Aston Martin']
+
+# 15. find the last index of "tata"
+print(cars.index("Tata"))           #0
+
+#List with "BMW"
+cars= ['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Audi', 'Mustang']
+
+# 16. Extend with condition extend the list with ["Ferrari","lambo"] if "BMW" is in the list
+if "BMW" in cars:
+  cars.extend(["Ferrari","lambo"])
+print(cars)       #['BMW', 'Mahindra', 'Suzuki', 'Rolls Royce', 'Bentley', 'Aston Martin', 'Tata', 'Audi', 'Mustang', 'Ferrari', 'lambo']
